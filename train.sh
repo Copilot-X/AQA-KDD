@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 数据处理
+python3 dataProcess.py
+
 # 1、训练
 torchrun --nproc_per_node 1 \
 -m FlagEmbedding.baai_general_embedding.finetune.run \
